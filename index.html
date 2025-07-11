@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PulseView – WhatPulse Companion App</title>
 
-  <!-- Open Graph Meta für Link-Vorschau -->
+  <!-- Open Graph Meta -->
   <meta property="og:title" content="PulseView – WhatPulse Companion App" />
   <meta property="og:description" content="Track keystrokes, clicks, bandwidth and uptime with this sleek fanmade companion app for WhatPulse. Available now on the App Store." />
   <meta property="og:image" content="https://pulseview.nebuliton.de/assets/header.png" />
@@ -44,12 +44,23 @@
       font-size: 2.5rem;
       margin-bottom: 10px;
     }
+    h2 {
+      color: #b28eff;
+      margin-top: 60px;
+    }
     p.description {
       font-size: 1.2rem;
       color: #ccc;
       margin-bottom: 40px;
     }
-    .store-button img {
+    .store-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .store-buttons img {
       height: 60px;
     }
     .screenshots {
@@ -63,26 +74,11 @@
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     }
-    .platforms {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 30px;
-      margin: 60px 0 20px;
-      text-align: left;
-    }
-    .platform-card {
+    .feature-box {
       background: rgba(255, 255, 255, 0.05);
       border-radius: 16px;
       padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .platform-card h3 {
-      margin-top: 0;
-      color: #b28eff;
-    }
-    .platform-card p {
-      font-size: 1rem;
-      color: #ccc;
+      margin: 20px 0;
     }
     footer {
       margin: 60px 0 30px;
@@ -107,51 +103,62 @@
     <h1>PulseView</h1>
     <p class="description">
       A beautifully crafted fanmade companion app for <strong>WhatPulse</strong>.<br>
-      Track your keystrokes, clicks, bandwidth and uptime – from anywhere.<br><br>
-
-      <strong>Available for:</strong> iPhone, Apple Watch, Apple TV (tvOS)<br><br>
-
-      • <strong>iPhone:</strong> Full-featured with rankings, milestones, live stats and console control<br>
-      • <strong>Apple Watch:</strong> Instantly check your main WhatPulse stats – right from your wrist<br>
-      • <strong>Apple TV:</strong> Stunning visual insights – perfect for streamers and data fans<br><br>
-
+      Track your keystrokes, clicks, bandwidth and uptime – from anywhere.<br>
       <small>
         WhatPulse is a desktop application that measures your keyboard and mouse usage, bandwidth, and system uptime.
         Learn more at <a href="https://whatpulse.org" target="_blank" style="color: #b28eff;">whatpulse.org</a>.
       </small>
     </p>
-    <div class="store-button">
+
+    <div class="store-buttons">
       <a href="https://apps.apple.com/app/pulseview/id6746577408" target="_blank">
-        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&release=true&h=76d93f46b47c6f5316d44e880768d38e" alt="Download on the App Store" />
+        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&release=true" alt="Download for iPhone & Watch" />
+      </a>
+      <a href="https://apps.apple.com/app/pulseview-tv/id6469466093" target="_blank">
+        <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&release=true" alt="Download for Apple TV" />
       </a>
     </div>
+
+    <h2>📱 iPhone Screenshots</h2>
     <div class="screenshots">
-      <img src="assets/iphone1.PNG" alt="App Screenshot 1" />
-      <img src="assets/iphone2.PNG" alt="App Screenshot 2" />
-      <img src="assets/iphone3.PNG" alt="App Screenshot 3" />
-      <img src="assets/iphone4.PNG" alt="App Screenshot 4" />
-      <img src="assets/iphone5.PNG" alt="App Screenshot 5" />
-      <img src="assets/iphone6.PNG" alt="App Screenshot 6" />
-      <img src="assets/iphone7.PNG" alt="App Screenshot 7" />
+      <img src="assets/iphone1.PNG" alt="iPhone Screenshot 1" />
+      <img src="assets/iphone2.PNG" alt="iPhone Screenshot 2" />
+      <img src="assets/iphone3.PNG" alt="iPhone Screenshot 3" />
+      <img src="assets/iphone4.PNG" alt="iPhone Screenshot 4" />
+      <img src="assets/iphone5.PNG" alt="iPhone Screenshot 5" />
+      <img src="assets/iphone6.PNG" alt="iPhone Screenshot 6" />
+      <img src="assets/iphone7.PNG" alt="iPhone Screenshot 7" />
     </div>
 
-    <h2 style="color: #b28eff;">Platform Features</h2>
-    <div class="platforms">
-      <div class="platform-card">
-        <h3>📱 iPhone</h3>
-        <p>Everything in one app: Rankings, pulsepath, live stats – all in your pocket.</p>
-      </div>
-      <div class="platform-card">
-        <h3>⌚ Apple Watch</h3>
-        <p>Glance at your key WhatPulse stats at any time. Lightweight, fast, and directly on your wrist.</p>
-      </div>
-      <div class="platform-card">
-        <h3>📺 Apple TV</h3>
-        <p>Enjoy fullscreen visual insights. Perfect for streamers, studios, or your living room dashboard.</p>
-      </div>
+    <h2>⌚ Apple Watch Screenshots</h2>
+    <p style="color: #aaa; font-size: 0.95rem;">The Watch app is included with the iOS version – no separate download needed.</p>
+    <div class="screenshots">
+      <img src="assets/Watch1.PNG" alt="Watch Screenshot 1" />
+      <img src="assets/Watch2.PNG" alt="Watch Screenshot 2" />
+      <img src="assets/Watch3.PNG" alt="Watch Screenshot 3" />
+      <img src="assets/Watch4.PNG" alt="Watch Screenshot 4" />
+      <img src="assets/Watch5.PNG" alt="Watch Screenshot 5" />
     </div>
 
-    <section style="margin-top: 60px; padding: 30px 20px; background: rgba(255, 255, 255, 0.05); border-radius: 16px;">
+    <h2>📺 Apple TV Screenshots</h2>
+    <div class="screenshots">
+      <img src="assets/TV1.PNG" alt="TV Screenshot 1" />
+      <img src="assets/TV2.PNG" alt="TV Screenshot 2" />
+      <img src="assets/TV3.PNG" alt="TV Screenshot 3" />
+    </div>
+
+    <h2>🌟 Platform Features</h2>
+    <div class="feature-box">
+      <strong>iPhone:</strong> Everything in one app: Rankings, PulsePath, live stats – all in your pocket.
+    </div>
+    <div class="feature-box">
+      <strong>Apple Watch:</strong> Glance at your WhatPulse stats anytime. Lightweight, fast and directly on your wrist. <em>(Included with iPhone version)</em>
+    </div>
+    <div class="feature-box">
+      <strong>Apple TV:</strong> Enjoy fullscreen visual insights. Perfect for streamers, studios, or your living room dashboard.
+    </div>
+
+    <section class="feature-box">
       <h2 style="color: #b28eff;">Why is PulseView free?</h2>
       <p style="font-size: 1.05rem; color: #ccc; max-width: 750px; margin: 0 auto;">
         PulseView will be free forever 🙂 It's a passion project built with care and love. 
