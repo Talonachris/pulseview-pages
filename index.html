@@ -63,6 +63,27 @@
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     }
+    .platforms {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin: 60px 0 20px;
+      text-align: left;
+    }
+    .platform-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .platform-card h3 {
+      margin-top: 0;
+      color: #b28eff;
+    }
+    .platform-card p {
+      font-size: 1rem;
+      color: #ccc;
+    }
     footer {
       margin: 60px 0 30px;
       font-size: 0.9rem;
@@ -84,14 +105,21 @@
   </header>
   <section class="content">
     <h1>PulseView</h1>
-<p class="description">
-  A beautifully crafted fanmade companion app for <strong>WhatPulse</strong>.<br>
-  Track your keystrokes, clicks, bandwidth and uptime – from anywhere.<br>
-  <small>
-    WhatPulse is a desktop application that measures your keyboard and mouse usage, bandwidth, and system uptime.
-    Learn more at <a href="https://whatpulse.org" target="_blank" style="color: #b28eff;">whatpulse.org</a>.
-  </small>
-</p>
+    <p class="description">
+      A beautifully crafted fanmade companion app for <strong>WhatPulse</strong>.<br>
+      Track your keystrokes, clicks, bandwidth and uptime – from anywhere.<br><br>
+
+      <strong>Available for:</strong> iPhone, Apple Watch, Apple TV (tvOS)<br><br>
+
+      • <strong>iPhone:</strong> Full-featured with rankings, milestones, live stats and console control<br>
+      • <strong>Apple Watch:</strong> Instantly check your main WhatPulse stats – right from your wrist<br>
+      • <strong>Apple TV:</strong> Stunning visual insights – perfect for streamers and data fans<br><br>
+
+      <small>
+        WhatPulse is a desktop application that measures your keyboard and mouse usage, bandwidth, and system uptime.
+        Learn more at <a href="https://whatpulse.org" target="_blank" style="color: #b28eff;">whatpulse.org</a>.
+      </small>
+    </p>
     <div class="store-button">
       <a href="https://apps.apple.com/app/pulseview/id6746577408" target="_blank">
         <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&release=true&h=76d93f46b47c6f5316d44e880768d38e" alt="Download on the App Store" />
@@ -106,11 +134,24 @@
       <img src="assets/iphone6.PNG" alt="App Screenshot 6" />
       <img src="assets/iphone7.PNG" alt="App Screenshot 7" />
     </div>
-    <p>
-      Track your progress with custom rankings, milestones and stat comparisons.<br>
-      PulseView is made with ❤️ by <strong>Nebuliton</strong> – for perfectionists, stat lovers, and fans of WhatPulse.
-    </p>
-    <section style="margin-top: 40px; padding: 30px 20px; background: rgba(255, 255, 255, 0.05); border-radius: 16px;">
+
+    <h2 style="color: #b28eff;">Platform Features</h2>
+    <div class="platforms">
+      <div class="platform-card">
+        <h3>📱 iPhone</h3>
+        <p>Everything in one app: Pulse control, console, rankings, milestones, live stats – all in your pocket.</p>
+      </div>
+      <div class="platform-card">
+        <h3>⌚ Apple Watch</h3>
+        <p>Glance at your key WhatPulse stats at any time. Lightweight, fast, and directly on your wrist.</p>
+      </div>
+      <div class="platform-card">
+        <h3>📺 Apple TV</h3>
+        <p>Enjoy fullscreen visual insights. Perfect for streamers, studios, or your living room dashboard.</p>
+      </div>
+    </div>
+
+    <section style="margin-top: 60px; padding: 30px 20px; background: rgba(255, 255, 255, 0.05); border-radius: 16px;">
       <h2 style="color: #b28eff;">Why is PulseView free?</h2>
       <p style="font-size: 1.05rem; color: #ccc; max-width: 750px; margin: 0 auto;">
         PulseView will be free forever 🙂 It's a passion project built with care and love. 
@@ -119,6 +160,7 @@
         Translations may come in the future – for now, everything is hardcoded in English.
       </p>
     </section>
+
     <footer>
       This app is not affiliated with or endorsed by WhatPulse. All rights belong to their respective owners.<br>
       &copy; 2025 Nebuliton
